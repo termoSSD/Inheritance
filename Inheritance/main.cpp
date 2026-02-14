@@ -21,7 +21,6 @@ private:
 	bool hasRedundantPSU;
 	string remoteIP;
 public:
-<<<<<<< HEAD
 	server(string cpu = "Unknown", int ram = 0, int storage = 0, int height = 0, int maxCl = 0, bool psu = false, string ip = "0.0.0.0")
 		: ECM(cpu, ram, storage), rackUnitHeight(height), maxClient(maxCl), hasRedundantPSU(psu), remoteIP(ip) {
 	}
@@ -36,8 +35,6 @@ public:
 		cout << "Remote IP: " << remoteIP << endl;
 		cout << "-------------------------";
 	}
-=======
->>>>>>> parent of 9430dd6 (Add main.cpp with ECM, server, and laptop class hierarchyImplement a simple inheritance example in main.cpp with ECM as the base class and server and laptop as derived classes, each with their own attributes and showInfo() methods. Update project and filter files to include main.cpp in the build.)
 };
 
 class laptop : public ECM
@@ -49,7 +46,6 @@ private:
 	double weightKg;
 	double screenSizeInches;
 public:
-<<<<<<< HEAD
 	laptop(string cpu = "Unknown", int ram = 0, int storage = 0, string mdl = "NoName", double batteryCap = 0.0, int batteryHP = 0, double weight = 0, double screen = 0)
 		: ECM(cpu, ram, storage), model(mdl), batteryCapacityWh(batteryCap), batteryHealth(batteryHP), weightKg(weight), screenSizeInches(screen) {
 	}
@@ -65,13 +61,10 @@ public:
 		cout << "Screen Size: " << screenSizeInches << endl;
 		cout << "-------------------------";
 	}
-=======
->>>>>>> parent of 9430dd6 (Add main.cpp with ECM, server, and laptop class hierarchyImplement a simple inheritance example in main.cpp with ECM as the base class and server and laptop as derived classes, each with their own attributes and showInfo() methods. Update project and filter files to include main.cpp in the build.)
 };
 
 int main()
 {
-<<<<<<< HEAD
 	ECM newMachine("INTEL", 1024, 1024);
 	server newServer("Intel Xeon", 64, 4000, 2, 500, true, "192.168.1.10");
 	laptop newLaptop("Intel Core i7", 16, 1000, "MacBook Pro", 99.6, 95, 2.1, 16.2);
@@ -82,6 +75,4 @@ int main()
 	newServer.showInfo();
 	cout << endl;
 	newLaptop.showInfo();
-=======
->>>>>>> parent of 9430dd6 (Add main.cpp with ECM, server, and laptop class hierarchyImplement a simple inheritance example in main.cpp with ECM as the base class and server and laptop as derived classes, each with their own attributes and showInfo() methods. Update project and filter files to include main.cpp in the build.)
 }
